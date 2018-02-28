@@ -13,7 +13,7 @@ public class JDBC {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://192.168.33.101:3306/martjack", "capillary", "123");
+			Connection con = DriverManager.getConnection("jdbc:mysql://192.168.33.101:3306/dbname", "username", "password");
 			// here sonoo is database name, root is username and password
 			Statement stmt = con.createStatement();
 			rs = stmt.executeQuery("select * from user_mapping limit 10;");
